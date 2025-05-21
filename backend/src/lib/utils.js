@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 export const generateToken = (userId, res) => {
+    // payload is {userId}
     const token = jwt.sign({ userId }, process.env.JWT_SECRET, {
         expiresIn: '7d',//after 7 days user has to login again
     });
