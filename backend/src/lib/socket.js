@@ -16,7 +16,7 @@ const userSocketMap = {};//{userId: socketId}
 // Create a Socket.IO server
 const io = new Server(server, {
     cors: {
-        origin: ['https://giggle-talk-codebase.vercel.app/']
+        origin: ['https://giggle-talk-codebase.vercel.app']
     }
 });
 
