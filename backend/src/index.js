@@ -19,7 +19,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());//middleware to parse cookies from request
 app.use(cors({
-    origin: "http://localhost:5173",//frontend url
+    origin: "https://giggle-talk-codebase.vercel.app",//frontend url
     credentials: true,// Allow cookies or auth headers to be sent with requests
 }));//middleware to enable CORS
 
